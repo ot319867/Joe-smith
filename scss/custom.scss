@@ -1,0 +1,206 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+
+
+// Then add additional custom code here
+$display: center;
+$margin-right: 1px;
+///where style goes
+/* Start of class styles*/
+
+.container-fluid{
+    background-color: #404040;
+
+}
+.li a{
+    color: #fff;
+}
+h1{
+    font-weight:bold;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+.nav-link{
+    font-size: 1.3em;
+    color: #499899;
+   
+}
+.nav-link-active{
+    color: #499899;
+}
+.nav-item{
+    color: #499899;
+    justify-content:right;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #499899;
+}
+.navbar-nav{
+    justify-content:right;
+    align-items: right;
+}
+
+.nav-link:hover{ color: #fff;}
+
+.img-fluid{
+    display:flex;
+}
+.imgshome{
+    justify-content: center;
+    display:flex;
+    margin:1px;
+    height:auto;
+    }
+    .container:hover .imgshome {
+      opacity: 1;
+    }
+.gallery{
+    border-radius: 10px;
+    margin: 10px;
+    transition: .5s ease;
+    background-color: #404040;
+  }
+    div.scroll-container {
+      background-color: #A6A6A6;
+      overflow: auto;
+      display: block;
+      justify-content: center;
+      padding: 8px;
+      width: 100%;
+    }
+  #imgs{
+    border-radius: 20%;
+  }
+    
+    div.scroll-container img {
+      padding: 8px;
+      border-radius: 10px;
+    }    
+
+#navbarNav{
+    justify-content: center;
+}
+
+.bs-navbar-padding-x{
+   padding: 0px;
+}
+.row > .column {
+    padding: 0 8px;
+    border-radius: 10px;
+  }
+  .row{
+    display: flex;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    justify-content: center;
+    width: 25%;
+  }
+  .action{
+    justify-content: center;
+  }
+  .aboutxt{
+    border-style: solid;
+    border-color:#499899;
+    padding: 1px;
+    height: 100px;
+    width:auto;
+    text-align: center;
+    padding-top: 10px;
+    }
+
+    footer{
+      background-color: #404040;
+      color: #fff;
+      width: auto;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .social{
+   display:flex;
+   flex-direction:row;
+   justify-content: space-evenly;
+    width: 50%;
+  }
+  .right,.left{
+   
+    width:20%;
+  }
+  .icons{
+   margin: 3%;
+  }
+
+  .packages{
+    width: 90%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    $margin-right: 1px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.highlights {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .highlights:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+ 
+  /* Add interactivity here(for different screens) */
